@@ -37,6 +37,7 @@
 //	return funcionar;
 //}
 
+//funciona
 void mostrarRecaudacionesFebrero(eRecaudaciones varRecaudaciones[], eContribuyentes varContribuyente[],int lenRecaudaciones,int lenContribuyente)
 {
 	int flagMenu=1;
@@ -96,7 +97,7 @@ void mostrarRecaudacionesFebrero(eRecaudaciones varRecaudaciones[], eContribuyen
 	}
 
 }
-
+//funciona
 void mostrarEleccionUsuario(eRecaudaciones varRecaudaciones[], eContribuyentes varContribuyente[],int lenRecaudaciones,int lenContribuyente,int decisionUsuario)
 {
 	int flagMenu=1;

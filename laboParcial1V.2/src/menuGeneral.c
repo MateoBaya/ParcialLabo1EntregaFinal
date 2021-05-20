@@ -67,6 +67,7 @@ int menuGeneral(eContribuyentes varGeneralContribuyente[],eRecaudaciones varGene
 						funcionar=1;
 						break;
 					case 9:
+						printf("Eliga: ");
 						cargarNumero(&decisionUsuario);
 						mostrarEleccionUsuario(varGeneralRecaudaciones, varGeneralContribuyente, cantidadRecaudacion, cantidadContribuyentes, decisionUsuario);
 						funcionar=1;
