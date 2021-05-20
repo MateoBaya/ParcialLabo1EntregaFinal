@@ -1,5 +1,5 @@
-#ifndef INFORME_H_
-#define INFORME_H_
+#ifndef MOSTRAR_H_
+#define MOSTRAR_H_
 #include "menuGeneral.h"
 
 /////////////////////////////////////////////////////////////////INFORMES//////////////////////////////////////////////////////////////////////
@@ -22,4 +22,4 @@ void mostrarRecaudacionContribuyente(eRecaudaciones varRecaudaciones[], eContrib
 
 void mostrarRecaudacionesSaldadas(eRecaudaciones varRecaudaciones[], eContribuyentes varContribuyente[],int lenRecaudaciones,int lenContribuyente);
 
-#endif /* INFORME_H_ */
+#endif /* MOSTRAR_H_ */

@@ -4,8 +4,9 @@
 #include <stdio.h>
 #include "recaudaciones_estructura.h"
 #include "contribuyente_estructura.h"
+#include "mostrar.h"
 #include "utn_general.h"
-#include "informe.h"
+#include "informes.h"
 #define cantidadContribuyentes 50
 #define cantidadRecaudacion 50
 

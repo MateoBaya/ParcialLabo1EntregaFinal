@@ -5,6 +5,7 @@ int menuGeneral(eContribuyentes varGeneralContribuyente[],eRecaudaciones varGene
 	int funcionar=0;
 	int elegir;
 	int error;
+	int decisionUsuario;
 	int legajoRecaudaciones=100;
 	int legajoContribuyente=1000;
 	if(varGeneralContribuyente != NULL && varGeneralRecaudaciones != NULL)
@@ -21,14 +22,15 @@ int menuGeneral(eContribuyentes varGeneralContribuyente[],eRecaudaciones varGene
 			printf("///      [6]-SALDAR RECAUDACION           ///\n");
 			printf("///      [7]-IMPRIMIR CONTRIBUYENTES      ///\n");
 			printf("///      [8]-IMPRIMIR RECAUDACIONES       ///\n");
-			printf("///      [9]-SALIR                        ///\n");
+			printf("///      [9]-INFORMES                     ///\n");
+			printf("///      [10]-SALIR                       ///\n");
 			printf("///                                       ///\n");
 			printf("/////////////////////////////////////////////\n");
 			printf("Opcion:  ");
 			error = cargarNumero(&elegir);
 			if (error==0)
 			{
-				if(valorConRango(elegir, 1, 9))
+				if(valorConRango(elegir, 1, 10))
 				{
 					switch(elegir)
 					{
@@ -64,6 +66,11 @@ int menuGeneral(eContribuyentes varGeneralContribuyente[],eRecaudaciones varGene
 						imprimirRecaudacionesSaldadas(varGeneralRecaudaciones, cantidadRecaudacion, varGeneralContribuyente, cantidadContribuyentes);
 						funcionar=1;
 						break;
+					case 9:
+						cargarNumero(&decisionUsuario);
+						mostrarEleccionUsuario(varGeneralRecaudaciones, varGeneralContribuyente, cantidadRecaudacion, cantidadContribuyentes, decisionUsuario)
+						funcionar=1;
+						break;
 					}
 				}else
 				{
@@ -71,7 +78,7 @@ int menuGeneral(eContribuyentes varGeneralContribuyente[],eRecaudaciones varGene
 				}
 			}
 
-		}while(elegir!=9);
+		}while(elegir!=10);
 	}
 
 	return funcionar;
