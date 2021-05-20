@@ -68,7 +68,7 @@ int menuGeneral(eContribuyentes varGeneralContribuyente[],eRecaudaciones varGene
 						break;
 					case 9:
 						cargarNumero(&decisionUsuario);
-						mostrarEleccionUsuario(varGeneralRecaudaciones, varGeneralContribuyente, cantidadRecaudacion, cantidadContribuyentes, decisionUsuario)
+						mostrarEleccionUsuario(varGeneralRecaudaciones, varGeneralContribuyente, cantidadRecaudacion, cantidadContribuyentes, decisionUsuario);
 						funcionar=1;
 						break;
 					}

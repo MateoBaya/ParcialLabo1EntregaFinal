@@ -8,5 +8,4 @@ void mostrarRecaudacionesFebrero(eRecaudaciones varRecaudaciones[], eContribuyen
 
 void mostrarEleccionUsuario(eRecaudaciones varRecaudaciones[], eContribuyentes varContribuyente[],int lenRecaudaciones,int lenContribuyente,int decisionUsuario);
 
-
 #endif /* INFORMES_H_ */
